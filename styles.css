@@ -1,0 +1,13 @@
+#nav-bar {
+    position: sticky;
+}
+
+@media (max-width: 650px) {
+    .logo > img {
+      margin: 0 auto;
+    }
+}
+
+.btn {
+    color: red;
+}
