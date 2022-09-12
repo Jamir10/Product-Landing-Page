@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
 
 :root {
@@ -30,17 +31,26 @@ header{
 }
 
 #nav-bar {
-    border: var(--border-guide-1);
-	width: 60%;
+    
+	/* width: 60%; */
 	/* max-width: 300px; */
     /* min-width: 540px; */
-	height: 50px;   
-    padding-right: 30px;
-    
+	
+   
 }
+
+.nav-list {
+    display: flex;
+    width: 800px;
+    height: 50px;   
+    /* padding-right: 30px; */
+    border: var(--border-guide-1);
+    justify-content: flex-end;
+}
+
 nav > ul{
 	display: flex;
-	justify-content: space-evenly;
+    
 	flex-wrap: wrap;
 	align-items: center;
 	padding-inline-start: 0;
@@ -54,12 +64,15 @@ nav > ul > li {
 	border: var(--border-guide-2);
 	margin: 0 0.2rem;
 	/* padding: 0.2rem; */
-	display: block;
-    flex-grow: 1;
-    flex-shrink: 1;
+	/* display: block; */
+    /* flex-grow: 1;
+    flex-shrink: 1; */
     text-align: right;
     flex-direction: row;
     /* width: 100%; */
+    list-style: none;
+    
+    
 }
 nav > ul > li:hover{
 	background-color:#dfdfe2;
@@ -99,13 +112,51 @@ input {
     border: var(--border-guide-3);
     flex-direction: column;
     /* reverse order flex div */
+    gap: 2em;
 }
 
-#how-it-works {
+.product h2 {
+    background-color: red;
+}
+
+.premium-materials {
+    border: var(--border-guide-2); 
+}
+
+.fast-shipping {
+    border: var(--border-guide-2);  
+}
+
+.quality-assurance {
+    border: var(--border-guide-2);
+}
+
+/* #how-it-works {
     border: var(--border-guide-3);
     padding: 2em;
     align-items: center;
     justify-items: center;
+} */
+
+#how-it-works {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+  
+/* #how-it-works > iframe {
+    max-width: 560px;
+    width: 100%;
+} */
+.icon {
+    border: var(--border-guide-1); 
+    width: 70px;
+}
+
+.desc {
+    border: var(--border-guide-1);
 }
 
 /* #video  {
