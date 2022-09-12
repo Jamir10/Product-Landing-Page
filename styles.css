@@ -31,7 +31,7 @@ header{
 
 #nav-bar {
     border: var(--border-guide-1);
-	width: 40%;
+	width: 60%;
 	/* max-width: 300px; */
     /* min-width: 540px; */
 	height: 50px;   
@@ -53,11 +53,13 @@ Flexbox to evenly space the children.
 nav > ul > li {
 	border: var(--border-guide-2);
 	margin: 0 0.2rem;
-	padding: 0.2rem;
+	/* padding: 0.2rem; */
 	display: block;
     flex-grow: 1;
     flex-shrink: 1;
     text-align: right;
+    flex-direction: row;
+    /* width: 100%; */
 }
 nav > ul > li:hover{
 	background-color:#dfdfe2;
@@ -90,4 +92,47 @@ input {
     align-items: center;
     align-self: center;
     align-content: center;
+}
+
+.container {
+    display: flex;
+    border: var(--border-guide-3);
+    flex-direction: column;
+    /* reverse order flex div */
+}
+
+#how-it-works {
+    border: var(--border-guide-3);
+    padding: 2em;
+    align-items: center;
+    justify-items: center;
+}
+
+/* #video  {
+    align-items: center;
+    justify-items: center;
+} */
+
+
+.product {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: var(--border-guide-3);
+    justify-content: space-between;
+}
+
+#tenor-trombone {
+    border: var(--border-guide-2);
+    text-align: center;
+}
+
+#bass-trombone {
+    border: var(--border-guide-2);
+    text-align: center;
+}
+
+#valve-trombone {
+    border: var(--border-guide-2);
+    text-align: center;
 }
