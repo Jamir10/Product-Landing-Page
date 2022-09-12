@@ -18,7 +18,7 @@ img {
 	
 }
 
-header{
+/* header{
     width: 100%;
 	height: 60px;
     background-color: #eee;
@@ -28,7 +28,7 @@ header{
 	align-items: center;
 	position: absolute;
 	top: 0;
-}
+} */
 
 #nav-bar {
     
@@ -41,7 +41,7 @@ header{
 
 .nav-list {
     display: flex;
-    width: 800px;
+    /* width: 800px; */
     height: 50px;   
     /* padding-right: 30px; */
     border: var(--border-guide-1);
