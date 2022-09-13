@@ -6,22 +6,24 @@
 }
 
 :root {
-    --border-guide-1: 1px solid red;
-    --border-guide-2: 1px solid green;
-    --border-guide-3: 1px solid blue;
-    --bc-1: #ddd;
+    --bc-1: #eee;
+    --bc-highlight: #a8a8a8;
 }
+
+
 
 body {
-    background-color: white;
+    background: var(--bc-1);
     font-family: 'Lato', sans-serif;
-    color: #000;
-    /* max-width: 960px; */
-    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    
 }
 
+/*========================= header =========================*/
+
 #header {
-    border: var(--border-guide-3);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,17 +40,17 @@ img {
     /* width: max(300px, 30vw); 
     Image get bigger
     */
-    border: var(--border-guide-1);		
+    	
 }
 
-.nav-list { border: var(--border-guide-1);
+.nav-list { 
     padding-right: 30px; 
     gap: 3em;  
 } 
 
 
 #nav-bar > ul > li {
-    border: var(--border-guide-2);
+    
     list-style: none;
 	margin: 0 0.2rem;
     display: inline-block; 
@@ -72,10 +74,13 @@ img {
     color: #000;
 }
 
+/*========================= media =========================*/
+
+
 @media (max-width: 651px) {
     
     #nav-bar > ul > li {
-        border: 1px solid yellow;
+        
         display: block;
         min-width: max-content;
         text-align: center;
@@ -83,8 +88,8 @@ img {
         /* font-size: .7rem; */
         
     } 
-    body, footer {
-        min-width: 480px;
+    body {
+        /* min-width: 480px; */
     }
 
     #enroll {
@@ -95,49 +100,40 @@ img {
         font-size: 1.37rem;
     }
 
-    #pricing {
-        display: grid;
-       justify-content: center;
-    }
     #pricing .product {
         display: grid;
-        /* width: 300px; */
-        /* justify-content: center; */
-        border: 5px solid purple;
-    }
-    #pricing .product > * {
-        /* max-width: 800px;
-        width: 100%; */
-        width: 250px;
-        display: grid;
-        border: 5px solid yellow;
+        
         justify-content: center;
-        align-items: center
-        /* ;
-        align-items: center; */
+        gap: 2rem;
+        /* width: 300px; 
+        
+        padding-right: 0;*/
     }
-
-    #pricing .product .each-product .btn {
-        display: flex;
-        border: 0;
-        margin: 15px 0;
-        background-color: red;
-        font-weight: 400;
-        height: 40px;
-        justify-content: center;
-        align-items: center;
-        width: 80px;
-        text-transform: uppercase;
-        text-align: center;
-        border: 1px solid black;
-        border-radius: 5px;
-    }
-   
 }
 
+@media (max-width: 480px) {
+    img {
+        justify-items: center;
+    }
+    #header {
+        display: block;
+        margin-bottom: 50px;
+        background: var(--bc-1);
+        
+        height: fit-content;
+        padding-bottom: 3px;
+    }
+
+    #nav-bar > ul > li {
+        margin: 5px;
+    }
+    
+}
+
+/*========================= enroll =========================*/
 
 #enroll {
-    border: var(--border-guide-2);
+    
     display: flex;
     height: 150px;
     align-items: center;
@@ -150,12 +146,12 @@ img {
 }
 
 #enroll h2 {
-    border: var(--border-guide-1);
+    
     padding: 5px;
 }
 
 section form .details {
-    border: var(--border-guide-1);
+   
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -169,19 +165,24 @@ section form .details {
 }
 
 section form .details input[type='email'] {
-    border: var(--border-guide-3);
-    max-width: 275px;
+    border: 1px solid black;
+    border-radius: 4px;
+    max-width: 300px;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
 }
 
 section form .details input[type='submit'] {
     border: var(--border-guide-3);
     max-width: 150px;
+    font-weight: 1000;
 }
 
-
+/* ========================= features ========================= */
 .container {
     display: flex;
-    border: var(--border-guide-3);
+    
     flex-direction: column;
     /* reverse order flex div */
     gap: 3em;
@@ -195,8 +196,8 @@ section form .details input[type='submit'] {
 
 .container .icon {
     display: flex;
-    background-color: red;
-    border: var(--border-guide-1); 
+    color: #ff8c00;
+    
     min-width: 70px;
     align-content: center;
     align-items: center; 
@@ -207,24 +208,25 @@ section form .details input[type='submit'] {
 
 
 .premium-materials {
-    border: var(--border-guide-2); 
+    
     display: flex;
     gap: 1rem;
 }
 
 
 .fast-shipping {
-    border: var(--border-guide-2); 
+    
     display: flex; 
     gap: 1rem;
 }
 
 .quality-assurance {
-    border: var(--border-guide-2);
+    
     display: flex;
     gap: 1rem;
 }
 
+/* ========================= how it works ========================= */
 
 #how-it-works {
     
@@ -251,27 +253,34 @@ section form .details input[type='submit'] {
 } 
 
 
+/* ========================= Pricing ========================= */
+
 #pricing {
-    border: var(--border-guide-3);
+    
     margin-top: 80px;
     /* background-color: red; */
     padding: 0 30px;
+    margin-bottom: 80px;
 }
 .product {
-    border: var(--border-guide-3);
+    
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 1.5rem;
 }
 
 .product > * {
     flex-shrink: 1;
     flex-flow: 1;
+    max-width: 200px;
     width: 100%;
+    border: 1px solid black;
+    border-radius: 3px;
+    min-width: 200px;
 }
 
 .product h1 {
-    border: var(--border-guide-1);
+    
     font-weight: 525;
     margin: 2px;
     padding: 2px;
@@ -279,11 +288,11 @@ section form .details input[type='submit'] {
 
 .product h2 {
     display: flex;
-    border: var(--border-guide-1);
+    
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
     font-weight: 530;
-    background-color: var(--bc-1);
+    background: var(--bc-highlight);
     height: 40px;
     align-items: center;
     justify-content: center;
@@ -291,12 +300,12 @@ section form .details input[type='submit'] {
 }
 
 .product p {
-    border: var(--border-guide-1);
+    
     font-size: .9rem;
     padding: 5px;
 }
 
-.product .btn {
+.btn {
     border: 0;
     margin: 15px 0;
     background-color: #f1c40f;
@@ -314,16 +323,67 @@ section form .details input[type='submit'] {
 
 
 #tenor-trombone {
-    border: var(--border-guide-2);
+    
     text-align: center;
 }
 
 #bass-trombone {
-    border: var(--border-guide-2);
+    
     text-align: center;
 }
 
 #valve-trombone {
-    border: var(--border-guide-2);
+    
     text-align: center;
 }
+
+/*========================= footer =========================*/
+footer {
+    
+    display: block;
+    background: var(--bc-highlight);
+    padding: 20px 30px 20px 0;
+    
+    /* justify-content: space-between;
+    align-items: center;
+    height: 80px;
+   */
+}
+
+
+
+footer .nav-bar .nav-list {
+    
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    text-align: right;
+    padding-right: 0;
+    margin-bottom: 5px;
+}
+
+
+footer p {
+    
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+    color: rgba(68, 68, 68, 1);
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: #000;
+    /* transition: all 0.5s ease 10s; */
+}
+
+.nav-bar ul li a:hover{
+	color:#b4b4bc; 
+	color:#1b1b32;
+	cursor: pointer;	
+}
+
+.nav-bar ul li a:visited {
+    color: #000;
+}
+
