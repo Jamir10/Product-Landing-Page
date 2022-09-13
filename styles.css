@@ -10,15 +10,12 @@
     --bc-highlight: #a8a8a8;
 }
 
-
-
 body {
     background: var(--bc-1);
     font-family: 'Lato', sans-serif;
     max-width: 1200px;
     width: 100%;
-    margin: auto;
-    
+    margin: auto;   
 }
 
 /*========================= header =========================*/
@@ -34,13 +31,11 @@ body {
     top: 0; 
 } 
 
-
 img {
     width: 300px;
     /* width: max(300px, 30vw); 
     Image get bigger
-    */
-    	
+    */   	
 }
 
 .nav-list { 
@@ -48,14 +43,10 @@ img {
     gap: 3em;  
 } 
 
-
 #nav-bar > ul > li {
-    
     list-style: none;
 	margin: 0 0.2rem;
     display: inline-block; 
-    /* flex-grow: 1;
-    flex-shrink: 1; */
 }
 
 #nav-bar ul li a {
@@ -78,52 +69,32 @@ img {
 
 
 @media (max-width: 651px) {
-    
     #nav-bar > ul > li {
-        
         display: block;
         min-width: max-content;
         text-align: center;
-       
-        /* font-size: .7rem; */
-        
     } 
-    body {
-        /* min-width: 480px; */
-    }
-
     #enroll {
         padding: 0 30px;
     }
-
     #enroll h2 {
         font-size: 1.37rem;
     }
-
     #pricing .product {
         display: grid;
-        
         justify-content: center;
         gap: 2rem;
-        /* width: 300px; 
-        
-        padding-right: 0;*/
     }
 }
 
 @media (max-width: 480px) {
-    img {
-        justify-items: center;
-    }
     #header {
         display: block;
         margin-bottom: 50px;
         background: var(--bc-1);
-        
         height: fit-content;
         padding-bottom: 3px;
     }
-
     #nav-bar > ul > li {
         margin: 5px;
     }
@@ -133,35 +104,24 @@ img {
 /*========================= enroll =========================*/
 
 #enroll {
-    
     display: flex;
     height: 150px;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin: 20px 0;
-    
-    /* flex-direction: column;
-     */   
 }
 
 #enroll h2 {
-    
     padding: 5px;
 }
 
 section form .details {
-   
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 8px;
     padding: 10px;
-    /* ;
-    align-content: center;
-    align-self: center;
-    float: center;
-     */ 
 }
 
 section form .details input[type='email'] {
@@ -181,47 +141,33 @@ section form .details input[type='submit'] {
 
 /* ========================= features ========================= */
 .container {
-    display: flex;
-    
+    display: flex; 
     flex-direction: column;
-    /* reverse order flex div */
     gap: 3em;
     margin-top: 80px;
-    /* background-color: red; */
-    padding: 0 30px;
-    
+    padding: 0 30px;    
 }
-
-
 
 .container .icon {
     display: flex;
     color: #ff8c00;
-    
     min-width: 70px;
     align-content: center;
     align-items: center; 
-    justify-content: center;
-    
+    justify-content: center; 
 }
 
-
-
 .premium-materials {
-    
     display: flex;
     gap: 1rem;
 }
 
-
 .fast-shipping {
-    
     display: flex; 
     gap: 1rem;
 }
 
 .quality-assurance {
-    
     display: flex;
     gap: 1rem;
 }
@@ -229,41 +175,30 @@ section form .details input[type='submit'] {
 /* ========================= how it works ========================= */
 
 #how-it-works {
-    
     display: flex;
-    
     margin-top: 50px;
-    /* background-color: red; */
     padding: 0 30px;
-    height: 225px;
-   
-    
+    height: 225px; 
     align-items: center;
     justify-content: center;
-    
-
 }
 
 #how-it-works > iframe {
     display: flex;
     height: 100%;
     width: 100%;
-    max-width: 400px;
-    
+    max-width: 400px; 
 } 
-
 
 /* ========================= Pricing ========================= */
 
 #pricing {
-    
     margin-top: 80px;
-    /* background-color: red; */
     padding: 0 30px;
     margin-bottom: 80px;
 }
+
 .product {
-    
     display: flex;
     justify-content: center;
     gap: 1.5rem;
@@ -280,7 +215,6 @@ section form .details input[type='submit'] {
 }
 
 .product h1 {
-    
     font-weight: 525;
     margin: 2px;
     padding: 2px;
@@ -288,7 +222,6 @@ section form .details input[type='submit'] {
 
 .product h2 {
     display: flex;
-    
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
     font-weight: 530;
@@ -300,7 +233,6 @@ section form .details input[type='submit'] {
 }
 
 .product p {
-    
     font-size: .9rem;
     padding: 5px;
 }
@@ -323,37 +255,26 @@ section form .details input[type='submit'] {
 
 
 #tenor-trombone {
-    
     text-align: center;
 }
 
 #bass-trombone {
-    
     text-align: center;
 }
 
 #valve-trombone {
-    
     text-align: center;
 }
 
 /*========================= footer =========================*/
+
 footer {
-    
     display: block;
     background: var(--bc-highlight);
     padding: 20px 30px 20px 0;
-    
-    /* justify-content: space-between;
-    align-items: center;
-    height: 80px;
-   */
 }
 
-
-
 footer .nav-bar .nav-list {
-    
     display: flex;
     justify-content: flex-end;
     list-style: none;
@@ -362,9 +283,7 @@ footer .nav-bar .nav-list {
     margin-bottom: 5px;
 }
 
-
 footer p {
-    
     display: flex;
     justify-content: flex-end;
     margin-top: 5px;
