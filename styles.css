@@ -248,12 +248,12 @@ section form .details input[type='submit']:hover {
 
 .fast-shipping {
     display: flex; 
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .quality-assurance {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 /* ========================= how it works ========================= */
