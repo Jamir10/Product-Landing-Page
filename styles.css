@@ -95,11 +95,91 @@ img {
         height: fit-content;
         padding-bottom: 3px;
     }
+
+    #header img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 40px;
+        padding-top: 20px;
+    }
+
+    #nav-bar > ul {
+        padding: 0;
+    }
+
     #nav-bar > ul > li {
         margin: 5px;
     }
+    body footer {
+        display: block;
+        background: var(--bc-highlight);
+        padding-left: 30px;
+    }
     
+    body footer .nav-bar .nav-list {
+        display: block; 
+    }
+    body footer .nav-bar .nav-list li {
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    body footer p {
+        display: flex;
+        justify-content: center;
+        margin: 8px 0;
+        text-align: center;
+    }
+  
 }
+@media (max-width: 300px) {
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        min-width: 230px;
+    }
+
+    img {
+        width: 100%;
+        padding: 18px 0 18px 30px;
+    }
+    #nav-bar > ul > li {
+        display: block;
+        min-width: max-content;
+        text-align: center;
+        padding-right: 0;
+        
+    }
+    .container .premium-materials {
+        display: block;
+    }
+    .container .fast-shipping {
+        display: block;
+    }
+    .container .quality-assurance {
+        display: block;
+    }
+    .container .icon {
+        margin-bottom: 10px;
+    }
+    .container h2 {
+        text-align: center;
+    }
+    .container p {
+        text-align: center;
+    }  
+    
+ 
+
+}
+  
+
 
 /*========================= enroll =========================*/
 
@@ -137,6 +217,10 @@ section form .details input[type='submit'] {
     border: var(--border-guide-3);
     max-width: 150px;
     font-weight: 1000;
+}
+
+section form .details input[type='submit']:hover {
+    cursor: pointer;
 }
 
 /* ========================= features ========================= */
